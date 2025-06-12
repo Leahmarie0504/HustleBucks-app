@@ -80,11 +80,3 @@ npx playwright test     # E2E tests
 💬 Contact
 Made by Leah A.
 📎 LinkedIn
-
-
-
-
-💬 Contact
-
-Made by Leah A.
-LinkedIn
