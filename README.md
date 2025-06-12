@@ -56,10 +56,6 @@ It includes real, thoughtful test planning and execution on a full-stack mock ap
 
 test.yml
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🛠 Setup Instructions
