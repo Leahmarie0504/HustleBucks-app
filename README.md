@@ -1,4 +1,5 @@
 HustleBucks
+
 A mock income tracker built to demonstrate real-world QA testing skills.
 This project was rebuilt from scratch to serve as a professional portfolio for manual and automated software testing, using modern web development tools and QA best practices.
 
