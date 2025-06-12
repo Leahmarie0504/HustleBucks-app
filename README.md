@@ -38,7 +38,7 @@ Using tools like:
 
 This repo is built to demonstrate my skills and readiness for a **QA Automation Engineer** role.  
 
-It includes real, thoughtful test planning and execution on a full-stack mock app — no shallow todo-list tutorials here.  
+It includes real, thoughtful test planning and execution on a full-stack mock app.
 
 ---
 
