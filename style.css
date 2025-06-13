@@ -3,3 +3,84 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.welcome {
+  text-align: center;
+  max-width:1200px;
+  margin: 2rem auto;
+  font-size: 1.1rem;
+}
+
+.site-nav {
+  background-color: #333;
+  padding: 0.75rem 1rem;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding:0;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+h1, h2, h3 {
+  margin-bottom: .5rem; /* pushes content below the heading down */
+}
+
+
+ul {
+  list-style-type: disc;  /* default bullet */
+  padding-left: 1.5rem;   /* indents list */
+  margin-bottom: 1rem;
+}
+
+
+li {
+  margin-bottom: 0.5rem;  /* space between list items */
+}
+
+.about-intro {
+  text-align: center;
+  max-width:1200px;
+  margin: 2rem auto;
+  font-size: 1.1rem;
+}
+
+.about-intro h1 {
+  margin-bottom: 0;
+}
+
+
+.about-columns {
+  display:flex;
+  gap:3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+}
+
+.column {
+  max-width: 50%;;
+}
+
+
+.column h2 {
+  margin-bottom: 0.75rem;
+}
