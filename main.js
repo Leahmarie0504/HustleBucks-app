@@ -1,6 +1,6 @@
 // Grab forms 
 const loginForm = document.getElementById('login-form');
-const incomeForm = document.getElementById('income-form')
+const incomeForm = document.getElementById('income-form');
 
 // LocalStorage helpers
 
@@ -43,7 +43,7 @@ if (incomeForm) {
         
         //Validate date & amount
         if (!date || isNaN(amt)) {
-            alert('Date and a numberic amount are required');
+            alert('Date and a numeric amount are required');
             return;
         }
 
@@ -56,4 +56,30 @@ if (incomeForm) {
         alert('Income logged!');
         incomeForm.reset();
     });
+
+    //History page rendering//
+    const historyTable = document.getElementById('history-table')?.querySelector('tbody');
+
+    if(historyTable) {
+        //load entries from local
+        const entries = loadEntries();
+
+        if (entries.length === 0) {
+            //show a "no data" row
+            const tr = document.createElement('tr');
+            tr.innerHTML = '<td colspan="3" style="text-align:center;">No entries logged yet.</td>';
+            historyTable.appendChild(tr);
+        } else {
+            //create row for each entry
+            entries.forEach(({ date, amount, description }) => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${date}</td>
+        <td>$${amount.toFixed(2)}</td>
+        <td>${description || '—'}</td>
+      `;
+      historyTable.appendChild(tr);
+    });
+        }    
+    }
 }
