@@ -11,7 +11,7 @@ function loadEntries() {
     }
 //Saves array to local
 function saveEntries(list) {
-    localStorage,setItem('incomeEntries', JSON.stringify(list));
+    localStorage.setItem('incomeEntries', JSON.stringify(list));
 }
 
 // LOGIN HANDLER
@@ -26,7 +26,7 @@ if (loginForm) {
             alert('Both fields are required.');
             return;
         }
-        alert('Welcome back, ${user!');
+        alert(`Welcome back, ${user}!`);
         
         //Redirect user to income logging page
         window.location.href = 'log_income.html';
@@ -54,6 +54,6 @@ if (incomeForm) {
 
         //Confirm & reset
         alert('Income logged!');
-        incomeForm.requestFullscreen();
+        incomeForm.reset();
     });
 }
