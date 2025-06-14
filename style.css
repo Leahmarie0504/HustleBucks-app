@@ -85,6 +85,17 @@ li {
   text-align: left;
 }
 
+/*History page container */
+.history-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.history-container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
 /* Navigation wrapper */
 .site-nav {
@@ -162,6 +173,22 @@ li {
   padding: 0 0.5rem;
 }
 
+/* History table */
+#history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#history-table th,
+#history-table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+#history-table th {
+  background-color: #f4f4f4;
+}
 
 
 /* ==========================================================================
