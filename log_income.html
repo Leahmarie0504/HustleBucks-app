@@ -6,14 +6,18 @@
     <title>Log Income</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-      <nav class="site-nav">
+
+  <nav class="site-nav">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="log_income.html">Log Income</a></li>
-      <li><a href="log_in.html">Log In</a></li>
       <li><a href="history.html">History</a></li>
+      <li class="guest-only"><a href="register.html">Sign Up</a></li>
+      <li class="guest-only"><a href="log_in.html">Log In</a></li>
+      <li class="auth-only"><button id="logout-btn">Log Out</button></li>
     </ul>
   </nav>
 
@@ -32,7 +36,7 @@
       <button type="submit">Add Entry</button>
     </form>
   </main>
-
-  <script src="main.js"></script>
+<script src="main.js"></script>
+<script type="module" src="auth_visibility.js"></script>
 </body>
 </html>

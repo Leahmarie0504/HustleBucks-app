@@ -117,6 +117,14 @@ li {
 /* ==========================================================================
    04. Components & Modules
    ========================================================================== */
+/*Conditionally Hide*/
+.auth-only {
+  display: none !important;
+}
+.guest-only {
+  display: inline-block !important;
+}
+
 /* Navigation links */
 .site-nav a {
   color: #fff;

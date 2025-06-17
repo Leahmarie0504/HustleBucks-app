@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hustle Bucks</title>
     <link rel="stylesheet" href="style.css">
-</head>                        
+</head>   
+
 <body>
-    <nav class = "site-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Hustle Bucks</a></li>
-             <li><a href="log_income.html">Log Income</a></li>
-            <li><a href="log_in.html">Log In</a></li>
-            <li><a href="history.html">History</a></li>
-        </ul>
-    </nav>
-    <div class = "welcome">
+
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="log_income.html">Log Income</a></li>
+      <li><a href="history.html">History</a></li>
+      <li class="guest-only"><a href="register.html">Sign Up</a></li>
+      <li class="guest-only"><a href="log_in.html">Log In</a></li>
+      <li class="auth-only"><button id="logout-btn">Log Out</button></li>
+    </ul>
+  </nav>
+
+  <div class = "welcome">
     <h1>Welcome to HustleBucks</h1>
 <p>Your personal income tracker—manual entry for now, with enhanced features like automated tracking coming soon.</p>
 <p>HustleBucks is a personal QA testing project focused on functional features and future automation.</p>
+
+<script src="main.js"></script>
+<script type="module" src="auth_visibility.js"></script>
 </body>
 </div>
 </html>

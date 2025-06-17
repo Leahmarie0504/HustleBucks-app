@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hustle Bucks</title>
     <link rel="stylesheet" href="style.css">
-</head>                        
+</head>    
+
 <body>
-        <nav class = "site-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Hustle Bucks</a></li>
-            <li><a href="log_income.html">Log Income</a></li>
-            <li><a href="log_in.html">Log In</a></li>
-            <li><a href="history.html">History</a></li>
-        </ul>
-    </nav>
+
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="log_income.html">Log Income</a></li>
+      <li><a href="history.html">History</a></li>
+      <li class="guest-only"><a href="register.html">Sign Up</a></li>
+      <li class="guest-only"><a href="log_in.html">Log In</a></li>
+      <li class="auth-only"><button id="logout-btn">Log Out</button></li>
+    </ul>
+  </nav>
 
     <div class ="about-intro">
         <h1>About HustleBucks</h1>
@@ -59,5 +63,7 @@
             <li>Adaptability across the full development stack</li>
         </ul>
 </div>
+<script src="main.js"></script>
+<script type="module" src="auth_visibility.js"></script>
 </body>
 </html>
